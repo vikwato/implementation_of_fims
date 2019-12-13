@@ -1,0 +1,213 @@
+% !TeX spellcheck = en_GB
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+\title{Implementation of Facility Information Management System by CIDRZ\\
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Vikwato Kamanga}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+vikwato.kamanga@cidrz.org}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Muyunda Joseph Walusiku}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+walusiku.muyunda@cidrz.org}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Mwansa Lumpa}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+mwansa.lumpa@cidrz.org}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Jacob Mutale}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+jacob.mutale@cidrz.org}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Kanema Chiyenu}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+kanema.chiyenu@cidrz.org}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Lameck Goma}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+lameck.goma@cidrz.org}
+\and
+\IEEEauthorblockN{7\textsuperscript{th} Chipo Chitambi}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+chipo.chitambi@cidrz.org}
+\and
+\IEEEauthorblockN{8\textsuperscript{th} Paul Somwe}
+\IEEEauthorblockA{\textit{Strategic Information} \\
+\textit{CIDRZ}\\
+Lusaka, Zambia \\
+paul.somwe@cidrz.org}
+}
+
+\maketitle
+\begin{IEEEkeywords}
+DHIS2 - District Health Information System 2\\
+CIDRZ - Centre for Infectious Disease Research in Zambia\\
+PEPFAR - The Unites States President's Emergency Fund for AIDS Relief\\
+FIMS - Facility Information Managment System\\
+CDC - Centre for Disease Control\\
+implementation\\
+digital\\
+
+\end{IEEEkeywords}
+
+\begin{abstract}
+Data in health has been a constant for many generations and has assisted in informed decision making ranging from clinical patient care to maintaining a steady supply of drugs and other resources at a health facility.
+A walk into a not so modern health facility will see a large array of paper records and registers containing information such as drug prescriptions, dispensations,
+patient diagnosis, etc. This is mainly in the interest to keep a steady knowledge of the patients that walk in and out of the health facility daily, as well as assist in administration.
+
+With the now obvious disadvantages that paper based records possess such as ease in loss and ruin, difficulty in indexing and maintaining, etc, electronic health information
+systems continue to play a pivotal role in improving care for patients. The simple ability for a doctor to click a button and retrieve 10 years worth of health information on a
+particular patient is evidence in it's role in continuity of care. Various stakeholders and policy makers can also have large pool of digital knowledge that can be faster analyzed with modern day
+computer technology to help in making informed decisions.
+
+It is very important that the introduction of the different health information systems to cater for these data needs is carefully managed as it has the potential to add a huge overhead of work.
+This can be in the form of users having to learn how to use a lot of different systems. Another potential problem is a difficulty in integration of the information between systems, among other problems.
+
+It is in this vein that the The Centre for Infectious Disease Research in Zambia, CIDRZ, implemented an electronic health information system known as
+Facility Information Management System for inhouse data collection, data reporting, monitoring \& evaluation, etc. This system is powered by DHIS2, an open source software
+package that is in use in multiple countries to handle the robust tasks involved in data and information management. FIMS has greatly helped with data use across different hierarchical levels and has harmonized parallel reporting channels
+within the organisation. FIMS has also greatly improved the accuracy of data reported as well as the timeliness in which it is done.
+
+This document presents on how the system has been implemented.
+\end{abstract}
+
+\section{Introduction}
+The Centre for Infectious Disease Research in Zambia, CIDRZ, has since its existence supported the Zambia Ministry of Health in public health implementation strategies.
+This has been through research, contribution to national guidelines and policies, and mentoring of clinical service provision.
+The Strategic Information (Data and M\&E) department at CIDRZ supports the different electronic information systems that have been introduced to improve the quality of the data that is captured and eventually reported.
+This is through data collection, mentoring on best data practices, monitoring and evaluation, technical support as well as data extraction for periodic data reporting.
+With the data generated from these health programs, different stakeholders will require data and information unique to their roles.
+This has seen parallel reporting systems that are culprit to duplication of work and discrepancies in reports from the same data source by different stakeholders.
+The SI department has developed an in-house electronic system to address this challenge known as the Facility Information Management System, FIMS.
+
+\section{Literature Review}
+\subsection{SmartCare}
+
+\subsection{Paper-based records}
+
+\subsection{DHIS2}
+District Health Information Software 2 (DHIS2) is an open source, web-based health management information system (HMIS) platform. Today, DHIS2 is the world's largest HMIS platform, in use by 67 low and middle-income countries.
+2.30 billion people live in countries where DHIS2 is used. With inclusion of NGO-based programs, DHIS2 is in use in more than 100 countries. The core DHIS2 software development is managed by the Health Information Systems Program (HISP) at the University of Oslo (UiO).
+HISP is a global network comprised of 11 in-country and regional organizations, providing day-in, day-out direct support to ministries and local implementers of DHIS2 \cite{b1}.
+
+DHIS2 makes use of a variety of technologies and offers a robust solution in environments that do not have sufficient resources to build an information management system. The many technologies it incorporates, including an API architecture, make it highly interoperable with other software. It offers
+a wide range of functionality including but not limited to data collection, data analysis, data quality management, entity tracking. It is therefore highly scalable and can be used to take care of many organisational needs.
+
+Being an open source solution, DHIS2 has since its inception attracted many users and dynamic implementations across multiple industry domains. Different organisations such as CIDRZ, have adopted their fully self-owned instance of DHIS2 thereby building
+capacity and self-reliance. This has seen an ever-growing community that continues to support it. Its wide acceptance globally has also attracted a sustainable funding from well-established sponsors, allowing it to develop a network of experts.
+
+\subsection{Data Use by policy makers and clinicians}
+
+\subsection{Multiple Health Information Systems}
+
+\subsection{Centralized Information System}
+
+\subsection{Data Accuracy and Timeliness}
+
+\subsection{Data analytics and informatics}
+
+\section{Methods}
+\subsection{System Implementation Architecture}
+FIMS has a server centrally hosted at the CIDRZ headquarters. The server is on a 64-bit virtual machine running Microsoft Server 2016 with a 20GB RAM. PostgreSQL 10 is the
+database management system used for FIMS and application runs on an Apache Tomcat 7 (compatible with Java 8) server and is allocated an initial memory of 4096MB and a maximum of 8192MB of the Java
+Virtual Machine memory. These specifications fall in line with what is recommended for a medium to large DHIS2 instance.
+
+FIMS makes use of both internal and external network links meaning it can be accessed via the Internet or CIDRZ internal network at the CIDRZ headquarters, health facilities and various data entry points. To protect the system and the highly confidential data it stores, the external link is
+SSL (Secure Sockets Layer) encrypted.
+
+User can access FIMS via web browsers and DHIS2 Android applications on laptops and tablets. Google Chrome is the DHIS2 recommended browser of choice, but other browsers have also been tested and work well with the application. HISP communities, among other developer communities,
+have developed different apps for data entry, data dashboard views, etc. that can be downloaded from Google Play and installed on Android devices. The DHIS2 web apps support temporary offline data entry in case of a sudden loss of network. This data is stored in the cache and uploads as soon as network
+is restored. The Android apps are however tailored for full offline data entry support. This is achieved by first storing data on the device and synchronizing it to the FIMS server at a user-controlled time.
+
+-------------------------------diagram comes here---------------------------------------------------
+
+\subsection{System Administration}
+The system was implemented by the Strategic Information reporting team. The reporting team in collaboration with the CIDRZ IT departement, is also responsible for the continuous maintenance of the system.
+
+Maintenance includes server side adminstration, 
+
+DHIS2 technical support, 
+
+creation, refactioring and improvement of data collection forms
+
+data extraction
+
+\subsection{System Usage}
+
+\section{Results}
+
+\section{Discussion}
+FIMS has improved CIDRZ data usage within different organisation hierarchy levels, harmonized parallel reporting channels, improved accuracy of data and improved meeting of reporting deadlines.
+
+\subsection{User Roles \& Hierarchy}
+FIMS makes use of the DHIS2 user functionalities and sharing settings to protect the data. The functionalities are grouped into user roles that fit the different cadres of staff that use FIMS e.g. Guest, Data Entry, Data Analysis \& Reporting, etc.
+The access to the FIMS datasets is only shared to the respective users. The security of the system is further enhanced by adding layers to the  level i.e. facility, district, provincial, etc. of which the different user can view the data.
+The user roles, sharing and hierarchy layers not only protect the data but also improve the quality by preventing unauthorised users from mistakenly entering wrong data.
+
+\subsection{Scope of data captured}
+FIMS has also been used as CIDRZ's primary system to handle data management and reporting. It is supporting more than 15 public health programs, clinical trials and research studies including The United States President's Emergency Plan for AIDS Relief (PEPFAR) funded
+projects ACHIEVE (Achieving Control of HIV Epidemic in Zambia) \& LIFE (Lab Innovation for Excellence) through the Centre for Disease Control (CDC).
+
+Support offered to the projects stated above include data collection, data quality management, clinical patient management among other things. Data captured includes both aggregate and individual patient data.
+
+At the time of writing, FIMS was being used in health facilities across different districts in 5 provinces in Zambia namely Copperbelt, Lusaka, Eastern, Southern and Western provinces.
+
+\subsection{Data usage within different organisation hierarchy levels}
+FIMS has given users access to centralized system data that is of use at their respective hierarchy in the organisation. Users stationed at a health facility, supervising districts or provinces and able to extract data that can be used to monitor performance,
+manage patient care, report program achievement, etc. As data as entered in the system, FIMS is set to aggregate the data every 3 hours, thereby providing data to stakeholders at almost real-time.
+
+\subsection{Harmonized parallel reporting channels}
+With a centralized system approach, FIMS has introduced a single channel of reporting data. All parallel data elements that are being collected and used to monitor different CIDRZ performance indicators have been properly structure in collective datasets.
+This has seen a reduction in duplication of work among different staff and formulated harmonized data reports.
+
+\subsection{Improved accuracy of data}
+With users being able to view data at their own convenience, it has greatly strengthened the data verification process. An M\&E officer, clinician, data associate can actively audit the data and make follow-ups in almost real-time. FIMS makes use of data validation at the point data submission
+and has greatly reduced instance of invalid data.
+
+\subsection{Improved meeting of reporting deadlines}
+Without a centralized data source or system, merging and versioning of data sources can often be time consuming. FIMS has greatly reduced on the time and technical overhead of merging decentralized data sources. Supervisors of staff responsible of data entry are also able to actively monitor timeliness
+and make interventions quickly.
+
+\subsection{Improved data storage and versioning}
+Being an electronic system, FIMS provides a reliable way on storing data for long term use. This data is further protected by putting in scheduled databases backups therefore reducing the risk of data loss. An audit trail is also kept for all data entries and helps in showing
+how data entered is changing and updated over time.
+
+\section{Conclusion}
+With FIMS, the integration of multiple health program and research study data into a central repository has greatly reduced on parallel data reporting and has reduced on discrepancies in reports.
+It has also greatly reduced on duplication of data collected and work being done. The inclusion of different user access levels for different stakeholders has also promoted the data use and enhanced supervision and improved timeliness in submission of reports.
+
+\section*{Acknowledgment}
+
+Special acknowledgement goes to the CIDRZ Strategic Information Department, headed by Dr. Theadora Savory, for continuing to be exemplary custodians of FIMS. Special thanks to Mwansa Lumpa who greatly contributed to the concept of FIMS and facilitated its adoption.
+Notable mention to the data reporting team namely Walusiku, Chipo, Kanema, Lameck, Paul and Jacob, that have been actively involved in implementation and development of FIMS and its functionality. Another thanks to the data collection unit that have adopted the system and continue to use it for their daily routine work. I would also like thank the various CIDRZ staff 
+that continue to use FIMS and bring the concept to reality.
+
+\begin{thebibliography}{00}
+\bibitem{b1} dhis2.org, ``About DHIS2'', 2019. [Online] Available: https://www.dhis2.org/about. [Accessed: 11-Oct-2019]
+\end{thebibliography}
+
+\end{document}
